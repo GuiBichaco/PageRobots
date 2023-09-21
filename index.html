@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 15/09 - Menu - Tabela</title>
+
+    <!-- ícone na aba -->
+    <link rel="shortcut icon" href="./images/robot.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <!-- BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Chamada da CSS do BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Minha CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header class="container mt-4">
+
+
+        <!-- menu principal -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-menu" href="#">
+                    <i class="bi bi-robot me-1"></i>Robots</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-text-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-outline dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown link
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container mb-4">
+
+        <article class="row p-5 d-flex align-items-center">
+            <section class="col-md-6 my-3">
+                <h1 class="display-1 text-blue">1ESA</h1>
+                <p class="lead my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto commodi tempore
+                    soluta perferendis, rerum iste autem minus inventore laboriosam quam!</p>
+                <a href="" class="btn btn-outline-dark btn-sm">Mais Informações
+                    <i class="bi bi-arrow-down-circle ms-1 icon-position"></i>
+                </a>
+            </section>
+
+            <figure class="col-md-6 my-3">
+                <img src="./images/chat-bot-animate.svg" alt="Imagem de um ChatBot" class="img-fluid">
+            </figure>
+        </article>
+
+
+        <!-- tabela -->
+        <h2 class="text-blue">Nossos Robos</h2>
+        <section class="my-4 table-responsive">
+            <table class="table table-bordered table-striped table-hover text-center">
+                <!-- cabeçalho -->
+                <thead class="table-primary">
+                    <tr>
+                        <th>Nome do Robô</th>
+                        <th>Fabricante</th>
+                        <th>Recursos</th>
+                        <th>Preço</th>
+                        <th>Prazo entrega</th>
+                    </tr>
+                </thead>
+
+                <!-- corpo da tabela - dados -->
+                <tbody>
+                    <tr>
+                        <td>XPTO</td>
+                        <td>Apple</td>
+                        <td>IA + armas</td>
+                        <td>R$ 100.000,00</td>
+                        <td>03 meses</td>
+                    </tr>
+
+                    <tr>
+                        <td>QWER</td>
+                        <td>Lenovo</td>
+                        <td>Semi Alpabetizado</td>
+                        <td>R$ 25.000,00</td>
+                        <td>02 dias</td>
+                    </tr>
+
+                    <tr>
+                        <td>XPTO</td>
+                        <td>Apple</td>
+                        <td>IA + armas</td>
+                        <td>R$ 100.000,00</td>
+                        <td>03 meses</td>
+                    </tr>
+
+                    <tr>
+                        <td>QWER</td>
+                        <td>Lenovo</td>
+                        <td>Semi Alpabetizado</td>
+                        <td>R$ 25.000,00</td>
+                        <td>02 dias</td>
+                    </tr>
+
+                    <tr>
+                        <td>XPTO</td>
+                        <td>Apple</td>
+                        <td>IA + armas</td>
+                        <td>R$ 100.000,00</td>
+                        <td>03 meses</td>
+                    </tr>
+
+                    <tr>
+                        <td>QWER</td>
+                        <td>Lenovo</td>
+                        <td>Semi Alpabetizado</td>
+                        <td>R$ 25.000,00</td>
+                        <td>02 dias</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Dados atualizados: 25/08/2023</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <h2 class="text-blue">Melhores Robos</h2>
+
+        <!-- Cards e Grid -->
+        <section class="my-4 row">
+            <!-- 1° Card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-alex-knight-2599244.jpg" class="card-img-top" alt="Robo-Megalodon">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Megalodon</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe debitis
+                            eaque.</p>
+                        <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2° Card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-pavel-danilyuk-8294554.jpg" class="card-img-top" alt="Treme-Treme">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Treme-Treme  </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe debitis
+                            eaque.</p>
+                        <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3° Card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-pavel-danilyuk-8294558.jpg" class="card-img-top" alt="Robo-Marcos">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Marcos</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe debitis
+                            eaque.</p>
+                        <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4° Card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-pavel-danilyuk-8294622.jpg" class="card-img-top" alt="Robo-Pereira">
+                    <div class="card-body">
+                        <h5 class="card-title">Robo Pereira</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe debitis
+                            eaque.</p>
+                        <a href="#" class="btn btn-outline-primary">Mais Imagens</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="text-blue">Galeria de Imagens</h2>
+
+        <section class="row my-4 d-flex align-items-center">
+            <div class="col-md-6 my-2">
+                <img src="./images/pexels-pavel-danilyuk-8294554.jpg" alt="Imagem" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 my-2">
+                <div class="row">
+                    <div class="col-6 my-2">
+                        <img src="./images/pexels-alex-knight-2599244.jpg" alt="robo-image" class="rounded img-fluid">
+                    </div>
+                    <div class="col-6 my-2">
+                        <img src="./images/pexels-pavel-danilyuk-8294554.jpg" alt="robo-image"
+                            class="rounded img-fluid">
+                    </div>
+                    <div class="col-6 my-2">
+                        <img src="./images/pexels-pavel-danilyuk-8294558.jpg" alt="robo-image"
+                            class="rounded img-fluid">
+                    </div>
+                    <div class="col-6 my-2">
+                        <img src="./images/pexels-pavel-danilyuk-8294622.jpg" alt="robo-image"
+                            class="rounded img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="text-blue">Conta</h2>
+        <section>
+            <form id="dados" name="dados" method="get" action="">
+                <div class="row">
+                    <!-- 1 campo -->
+                    <div class="col-md-4 my-2">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome"
+                            minlength="10" maxlength="50" required>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" id="senha" class="form-control" placeholder="E!DfE" minlength="6"
+                            maxlength="15" required>
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <label for="data" class="form-label">Data do cadastro</label>
+                        <input type="date" id="data" class="form-control">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <label for="formacao" class="form-label">Formação</label>
+                        <!-- <select name="formacao" id="formacao" class="form-select">
+                            <option value="0" disabled selected>Selecione uma opção</option>
+                            <option value="1">Ensino Médio</option>
+                            <option value="2">Ensio Superior</option>
+                            <option value="3">Pós Graduação</option>
+                            <option value="4">Mestrado</option>
+                            <option value="5">Doutorado</option>
+                            <option value="6">Reinado</option>
+                        </select> -->
+                        <input list="list-formacao" name="formacao" id="formacao" class="form-control">
+                        <datalist id="list-formacao">
+                            <option value="A">
+                            <option value="B">
+                            <option value="C">
+                            <option value="D">
+                            <option value="E">
+                        </datalist>
+                    </div>
+
+                    <div class="col-md-4 my-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="email@servidor.com" required>
+                    </div>
+
+                    <div class="col-md-4 my-2">
+                        <p>Tipo de conta: </p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Free</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Premium</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="inlineRadio3">Plus</label>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <label for="mensagem" class="form-label">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Ex: Mensagem" class="form-control"></textarea>
+                    </div>
+
+
+
+                    <!-- <div class="col-md-6 my-2">
+                        <input type="radio" name="teste" id="teste1">
+                        <label for="teste1">abcd</label>
+                        <input type="radio" name="teste" id="teste2">
+                        <label for="teste2">abcd</label>
+                        <input type="radio" name="teste" id="teste3">
+                        <label for="teste3">abcd</label>
+                        <input type="radio" name="teste" id="teste4">
+                        <label for="teste4">abcd</label>
+                    </div>
+
+                    <div class="col-md-12 my-2">
+                        <input type="checkbox" name="teste" id="teste1">
+                        <label for="teste1">abcd</label>
+                        <input type="checkbox" name="teste" id="teste2">
+                        <label for="teste2">abcd</label>
+                        <input type="checkbox" name="teste" id="teste3">
+                        <label for="teste3">abcd</label>
+                        <input type="checkbox" name="teste" id="teste4">
+                        <label for="teste4">abcd</label>
+                    </div> -->
+                    <div class="my-4 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Criar Conta</button>
+                        <!-- <button type="reset">Enviar</button>
+                        <button type="button">Enviar</button> -->
+
+                        
+
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- Chamada do JS do BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
